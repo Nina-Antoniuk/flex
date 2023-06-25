@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+    background-color: #fff;
+}
+
+.wrapper {
+    height: 100vh;
+    background-color: rgb(138, 227, 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links-list-item::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background-image: url("./images/crab.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    font-size: 45px;
+    line-height: 1.5;
+}
+
+.link:hover {
+    color: rgb(231, 102, 90);
+}
